@@ -1,0 +1,106 @@
+<vlayout sclass="page-content" xmlns:n="native" spacing="0">
+	<div sclass="breadcrumbs">
+		<div sclass="breadcrumb">
+			<span sclass="home-icon z-icon-home" />
+			<a label="Master" href="#" />
+			<label value="Master User" />
+		</div>
+		<!-- Search input-->
+		<div sclass="nav-search">
+			<bandbox placeholder="Search ..." sclass="input-prepend" />
+		</div>
+	</div>
+
+	<div sclass="page-header">
+		<label value="Master User" />
+		<a label="overview &amp; stats"
+			iconSclass="z-icon-angle-double-right" sclass="subtitle" />
+	</div>
+	<div class="container" xmlns:n="native">
+		<grid>
+			<columns>
+				<column label="" width="10%" />
+				<column label="" width="90%" />
+			</columns>
+			<rows>
+				<row>
+					<label value="Nama User :"
+						zclass="custom-label" />
+					<hbox>
+						<bandbox id="bdKdUser" buttonVisible="true"
+							mold="rounded" autodrop="true" readonly="true">
+							<bandpopup>
+								<hbox>
+									Nama User :
+									<textbox id="searchBox2"
+										ctrlKeys="#down#up" focus="true" />
+								</hbox>
+								<listbox id="listCustomer" width="300px"
+									mold="paging" pageSize="10"
+									onSelect="bdKdUser.value=self.selectedItem.label; 
+                                         bdKdUser.close();">
+
+									<listhead>
+										<listheader width="100px"
+											align="center">
+											<label multiline="true"
+												value="Kode User" zclass="custom-label" />
+										</listheader>
+										<listheader width="200px"
+											align="center">
+											<label multiline="true"
+												value="Nama User" zclass="custom-label" />
+										</listheader>
+									</listhead>
+								</listbox>
+							</bandpopup>
+						</bandbox>
+						<textbox id="namaUserCari" width="218px"
+							readonly="true" />
+						<button sclass="btn btn-sm btn-info"
+							id="btnCari" label="Cari" />
+					</hbox>
+				</row>
+				<row>
+					<label value="Status :" zclass="custom-label" />
+					<hbox>
+						<combobox id="txtRole" />
+					</hbox>
+				</row>
+			</rows>
+
+		</grid>
+	</div>
+	<panel border="1px" collapsible="true">
+		<caption iconSclass="z-icon-star orange" label="Master User">
+		<div sclass="z-toolbar" style="padding:0">
+					<toolbar align="end" style="float:right; border-style: none;" >
+						<button sclass="btn btn-sm btn-info" id="btnClose" tooltiptext="F" label="Tambah"/>
+					</toolbar>
+			</div>
+			</caption>
+		<panelchildren>
+			<listbox  id="listDataCustomer" height="200px"
+				width="100%">
+				<listhead>
+					<listheader width="25%" align="center">
+						<label multiline="true" value="Kode User"
+							zclass="custom-label" />
+					</listheader>
+					<listheader width="25%" align="center">
+						<label multiline="true" value="Nama User"
+							zclass="custom-label" />
+					</listheader>
+					<listheader width="25%" align="center">
+						<label multiline="true" value="Status"
+							zclass="custom-label" />
+					</listheader>
+					<listheader width="25%" align="center">
+						<label multiline="true" value="Action"
+							zclass="custom-label" />
+					</listheader>
+				</listhead>
+			</listbox>
+		</panelchildren>
+	</panel>
+</vlayout>

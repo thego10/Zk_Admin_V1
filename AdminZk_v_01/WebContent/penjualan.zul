@@ -1,0 +1,47 @@
+<vlayout sclass="page-content" xmlns:n="native" spacing="0">
+	<div sclass="breadcrumbs">
+		<div sclass="breadcrumb">
+			<span sclass="home-icon z-icon-home" />
+			<a label="Transaksi" href="#" />
+			<label value="Pnjualan" />
+		</div>
+		<!-- Search input-->
+		<div sclass="nav-search">
+			<bandbox placeholder="Search ..." sclass="input-prepend" />
+		</div>
+	</div>
+
+	<div sclass="page-header">
+		<label value="Transaksi Penjualan" />
+		<a label="overview &amp; stats"
+			iconSclass="z-icon-angle-double-right" sclass="subtitle" />
+	</div>
+	
+	<vlayout>
+		<a label="Form Input" iconSclass="z-icon-rss orange" sclass="rcaption lighter"/>
+		<hlayout spacing="1px">
+			<button width="100px" height="50px" label="C" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="/" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="X" type="button" class="btn-info" />
+		</hlayout>
+		<hlayout spacing="1px">
+			<button width="100px" height="50px" label="7" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="8" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="9" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="-" type="button" class="btn-info" />
+		</hlayout>
+		<hlayout spacing="1px">
+			<button width="100px" height="50px" label="4" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="5" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="6" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="+" type="button" class="btn-info" />
+		</hlayout>
+		<hlayout spacing="1px">
+			<button width="100px" height="50px" label="1" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="2" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="3" type="button" class="btn-info" />
+			<button width="100px" height="50px" label="0" type="button" class="btn-info" />
+		</hlayout>
+	</vlayout>
+</vlayout>

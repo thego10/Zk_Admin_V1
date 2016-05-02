@@ -1,0 +1,19 @@
+<vlayout sclass="page-content" xmlns:n="native" spacing="0">
+	<div sclass="breadcrumbs">
+		<div sclass="breadcrumb">
+			<span sclass="home-icon z-icon-home" />
+			<a label="Master" href="#" />
+			<label value="Master Data" />
+		</div>
+		<!-- Search input-->
+		<div sclass="nav-search">
+			<bandbox placeholder="Search ..." sclass="input-prepend" />
+		</div>
+	</div>
+
+	<div sclass="page-header">
+		<label value="Master Data" />
+		<a label="overview &amp; stats"
+			iconSclass="z-icon-angle-double-right" sclass="subtitle" />
+	</div>
+</vlayout>

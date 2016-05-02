@@ -1,0 +1,52 @@
+<?page title="Dashboard - ZK Admin"?>
+<?link href="less/index.css.dsp" rel="stylesheet" type="text/css"?>
+<zk>
+	<style>
+		.z-center { background-image: url("imgs/newlogo.jpg"); 
+		}
+		.z-window { 
+		background-image: none; background-color: #f5f5f0
+		
+		 }
+	</style>
+	<borderlayout hflex="1" vflex="1">
+		<center id="mainContent" autoscroll="true" border="none">
+			<hbox vflex="1" hflex="1" align="center" pack="center">
+				<vlayout>
+					<hbox>
+						<image src="imgs/logo.png" />
+					</hbox>
+					<vbox></vbox>
+					<window id="loginWin" title="LOGIN FORM" apply="controller.LoginController"
+						border="normal" hflex="min">
+						<vbox hflex="min" align="center">
+							<grid hflex="min">
+								<columns>
+									<column hflex="min" align="right" />
+									<column />
+								</columns>
+								<rows>
+									<row>
+										Id User :
+										<textbox id="txtId"
+											width="280px" height="40px" />
+									</row>
+									<row>
+										Password :
+										<textbox id="txtPassword"
+											type="password" width="280px" height="40px" />
+									</row>
+								</rows>
+							</grid>
+							<div style="text-align: right;">
+							<label id="message" sclass="warn"
+								value="&#160;" />
+							<button id="btnSubmit" label="Login" height="35px" width="85px" />
+							</div>
+						</vbox>
+					</window>
+				</vlayout>
+			</hbox>
+		</center>
+	</borderlayout>
+</zk>
